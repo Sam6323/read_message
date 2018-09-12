@@ -12,3 +12,9 @@ for len_avg in message:
 avg = int(avg / len(message))
 print('平均長度: ', avg)
 
+#篩選<100的數量
+new = []
+for line in message:
+	if len(line) < 100:
+		new.append(line)
+print('總共有: ', len(new), '行小於100個字')
